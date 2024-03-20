@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31584B12-1587-48E8-B41E-EA5C285DCADE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NTP_P1</RootNamespace>
+    <AssemblyName>NTP-P1</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ASYSSimpleLogoBigger_HALFSIZED_ICON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>NTP_P1.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Setup|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Setup\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Setup|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Setup\</OutputPath>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDailyProductData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDailyProductData.Designer.cs">
+      <DependentUpon>AddDailyProductData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPersonelView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminPersonelView.Designer.cs">
+      <DependentUpon>AdminPersonelView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppSettings.Designer.cs">
+      <DependentUpon>AppSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BProduct.cs" />
+    <Compile Include="Crypt.cs" />
+    <Compile Include="DatabaseView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DatabaseView.Designer.cs">
+      <DependentUpon>DatabaseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridShow.Designer.cs">
+      <DependentUpon>DataGridShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailedProductAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailedProductAnalysis.Designer.cs">
+      <DependentUpon>DetailedProductAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncDec.cs" />
+    <Compile Include="ImageLib.cs" />
+    <Compile Include="ProfitShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfitShow.Designer.cs">
+      <DependentUpon>ProfitShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartIcon.Designer.cs">
+      <DependentUpon>StartIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDailyProductData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDailyProductData.Designer.cs">
+      <DependentUpon>UpdateDailyProductData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePersonel.Designer.cs">
+      <DependentUpon>UpdatePersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProducts.Designer.cs">
+      <DependentUpon>UpdateProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs" />
+    <Compile Include="PersonelView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PersonelView.Designer.cs">
+      <DependentUpon>PersonelView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductView.Designer.cs">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerifyPage.Designer.cs">
+      <DependentUpon>VerifyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="ForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.cs">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectDatabase.cs">
+      <DependentUpon>ProjectDatabase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDatabase.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterPage.Designer.cs">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePassword.Designer.cs">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerifyCode.cs" />
+    <EmbeddedResource Include="AddDailyProductData.resx">
+      <DependentUpon>AddDailyProductData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPersonelView.resx">
+      <DependentUpon>AdminPersonelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppSettings.resx">
+      <DependentUpon>AppSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseView.resx">
+      <DependentUpon>DatabaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridShow.resx">
+      <DependentUpon>DataGridShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailedProductAnalysis.resx">
+      <DependentUpon>DetailedProductAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitShow.resx">
+      <DependentUpon>ProfitShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartIcon.resx">
+      <DependentUpon>StartIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDailyProductData.resx">
+      <DependentUpon>UpdateDailyProductData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePersonel.resx">
+      <DependentUpon>UpdatePersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProducts.resx">
+      <DependentUpon>UpdateProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelView.resx">
+      <DependentUpon>PersonelView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductView.resx">
+      <DependentUpon>ProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerifyPage.resx">
+      <DependentUpon>VerifyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterPage.resx">
+      <DependentUpon>RegisterPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePassword.resx">
+      <DependentUpon>UpdatePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="hashCoder.cs" />
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ProjectDatabase.xsc">
+      <DependentUpon>ProjectDatabase.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDatabase.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDatabase.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDatabase.xss">
+      <DependentUpon>ProjectDatabase.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ASyS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45-degree-fabric-light.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ASYSSimpleLogoBigger_HALFSIZED_ICON.ico" />
+    <Content Include="LOGO.ico" />
+    <Content Include="ProjectDatabase.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\money-bag.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\names.png" />
+    <None Include="Resources\asys_label.png" />
+    <None Include="Resources\asys-Banner.png" />
+    <None Include="Resources\ASYSSimpleLogoBigger_HALFSIZED.jpg" />
+    <None Include="Resources\ASYS_LOGO_FINAL_HALFSIZED.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\verified.png" />
+    <None Include="Resources\open-to-close.png" />
+    <None Include="Resources\close-to-open.png" />
+    <None Include="Resources\email.png" />
+    <None Include="Resources\exit-black-enter.png" />
+    <None Include="Resources\exit-black.png" />
+    <None Include="Resources\95461.png" />
+    <None Include="Resources\close-eye.png" />
+    <None Include="Resources\open-eye.png" />
+    <None Include="Resources\password.png" />
+    <None Include="Resources\username.png" />
+    <None Include="Resources\ASYS_LOGO_FINAL1.png" />
+    <None Include="Resources\exit_darken1.png" />
+    <None Include="Resources\exit_darken.png" />
+    <None Include="Resources\FatihLogoWhite11.jpg" />
+    <None Include="Resources\ASYS_LOGO_WHITE_WITHOUT_NOISE1.jpg" />
+    <None Include="Resources\FatihLogoWhite1.jpg" />
+    <None Include="Resources\ASYS_LOGO_WHITE_WITHOUT_NOISE.jpg" />
+    <None Include="Resources\ASYS_LOGO_COLORED.jpg" />
+    <None Include="Resources\ASYS_LOGO_NEON.jpg" />
+    <None Include="Resources\ASYS_LOGO_IN.jpg" />
+    <None Include="Resources\ASYS_LOGO_FINAL.png" />
+    <None Include="Resources\database-backup-savet.png" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\exit.bmp" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\delete-product-Colored.png" />
+    <None Include="Resources\delete-user-Colored.png" />
+    <None Include="Resources\ASYS_ColoredLogo.png" />
+    <None Include="Resources\ASYSSimpleLogoBigger.jpg" />
+    <None Include="Resources\ASYSSimpleLogo.jpg" />
+    <None Include="Resources\save-profile.png" />
+    <None Include="Resources\user-profile.png" />
+    <None Include="Resources\ASYSStatisticsLogo.jpg" />
+    <None Include="Resources\DeadInside.png" />
+    <None Include="Resources\ASYSCube.png" />
+    <None Include="Resources\FatihLogoWhite.jpg" />
+    <None Include="Resources\FatihLogo1.jpg" />
+    <None Include="Resources\FatihLogo.jpg" />
+    <None Include="Resources\ASYSStart.jpg" />
+    <None Include="Resources\ASYSStartLogo.png" />
+    <None Include="Resources\BackGround.jpg" />
+    <None Include="Resources\update_daily_Data.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\turkey-lang.png" />
+    <None Include="Resources\english-lang.png" />
+    <None Include="Resources\database-backup-delete-colored.png" />
+    <None Include="Resources\database-backup-delete.png" />
+    <None Include="Resources\database-backup-lock.png" />
+    <None Include="Resources\unlock.png" />
+    <None Include="Resources\data-analytics.png" />
+    <None Include="Resources\save_settings.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\database-management.png" />
+    <None Include="Resources\statistic.png" />
+    <None Include="Resources\analysis.png" />
+    <None Include="Resources\pie-chart.png" />
+    <None Include="Resources\previous4.png" />
+    <None Include="Resources\previous31.png" />
+    <None Include="Resources\previous3.png" />
+    <None Include="Resources\previous2.png" />
+    <None Include="Resources\redbox.jpg" />
+    <None Include="Resources\update-Colored-small.png" />
+    <None Include="Resources\update-Colored.png" />
+    <None Include="Resources\delete-Colored.png" />
+    <None Include="Resources\cancel-Colored1.png" />
+    <None Include="Resources\cancel-Colored-dark.png" />
+    <None Include="Resources\check-Colored.png" />
+    <None Include="Resources\cancel-Colored.png" />
+    <None Include="Resources\asysMail.png" />
+    <None Include="Resources\update-9.png" />
+    <None Include="Resources\update-8.png" />
+    <None Include="Resources\update-7.png" />
+    <None Include="Resources\update-6.png" />
+    <None Include="Resources\update-5.png" />
+    <None Include="Resources\update-4.png" />
+    <None Include="Resources\update-3.png" />
+    <None Include="Resources\update-2.png" />
+    <None Include="Resources\update-1.png" />
+    <None Include="Resources\defaultUser.png" />
+    <None Include="Resources\employee.png" />
+    <None Include="Resources\root.png" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\update-user.png" />
+    <None Include="Resources\update-product.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\delete-user.png" />
+    <None Include="Resources\delete-product.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add-user.png" />
+    <None Include="Resources\add-product.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\door.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\security.png" />
+    <None Include="Resources\goods.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\Xo1.png" />
+    <None Include="Resources\Xo.png" />
+    <None Include="Resources\x.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\line.png" />
+    <None Include="Resources\previous1.png" />
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NTP_P1\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,15 @@
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\bin\Debug\NTP-P1.exe.config
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\bin\Debug\NTP-P1.exe
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\bin\Debug\NTP-P1.pdb
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.csproj.AssemblyReference.cache
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.csproj.SuggestedBindingRedirects.cache
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP_P1.Properties.Resources.resources
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.csproj.GenerateResource.cache
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.csproj.CoreCompileInputs.cache
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.exe
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP-P1.pdb
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP_P1.LoginPage.resources
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\bin\Debug\ProjectDatabase.accdb
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP_P1.ForgetPassword.resources
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP_P1.ChangePassword.resources
+C:\Users\cagat\Documents\C# Projects\NTP-P1\NTP-P1\obj\Debug\NTP_P1.MainPage.resources

@@ -1,0 +1,22 @@
+﻿[*.cs]
+
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none
+
+# CS0108: Member hides inherited member; missing new keyword
+dotnet_diagnostic.CS0108.severity = none
+
+# CS0169: The field 'AddDailyProductData.groups' is never used
+dotnet_diagnostic.CS0169.severity = none
+
+# CS0414: The field 'AdminPersonelView.passwordChar' is assigned but its value is never used
+dotnet_diagnostic.CS0414.severity = none
+
+# CS0168: Variable is declared but never used
+dotnet_diagnostic.CS0168.severity = none
+
+# CS0649: Field 'Program.AccentCurrentColor' is never assigned to, and will always have its default value
+dotnet_diagnostic.CS0649.severity = none
+
+# CS0162: Unreachable code detected
+dotnet_diagnostic.CS0162.severity = none
