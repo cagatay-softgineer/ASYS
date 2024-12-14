@@ -9,6 +9,16 @@ ASYS (Analitik Satış Yönetim Sistemi), satılan ürünlerin günlük satış 
 - Rekabet analizi yapma
 - Kişiselleştirilmiş fiyat tavsiyeleri sunma
 
+## Yakında Geliyor ✨
+
+ASYS, yakın zamanda **daha gelişmiş analitik yetenekler** ve **modern yetkilendirme metotları** sunacak bir güncelleme alacak! Bu yeni sürüm ile:
+
+- **OAuth 2.0 desteği**: Daha güvenli ve modern bir doğrulama mekanizması.
+- **Performans iyileştirmeleri**: Daha hızlı analiz ve yanıt süresi.
+- **Yeni Kullanıcı Arayüzü**: Kullanımı daha kolay ve çekici bir tasarım.
+
+Güncellemeleri takip etmek ve yeni sürüm çıktığında haberdar olmak için lütfen projemizi yıldızlamayı unutmayın! 🌟
+
 ## Kurulum
 
 1. Projeyi klonlayın:
